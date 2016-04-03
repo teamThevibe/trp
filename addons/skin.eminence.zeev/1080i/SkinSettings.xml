@@ -131,7 +131,7 @@
 					<alttexturenofocus border="12" colordiffuse="$VAR[Highlight6]">common/white.png</alttexturenofocus>
 				</control>
  -->
-				<control type="togglebutton" id="42" description="Extras">
+				<control type="togglebutton" id="42" description="music">
 					<label>$LOCALIZE[31343725]</label>
 					<!-- string -->
 					<align>right</align>
@@ -155,12 +155,12 @@
 				</control>
 
 				<control type="togglebutton" id="39" description="Advanced">
-					<label>$LOCALIZE[31343629]</label>
+					<label>$LOCALIZE[31234]</label>
 					<align>right</align>
 					<font>font-listinfo</font>
 
 					<usealttexture>ControlGroup(3).HasFocus(39)</usealttexture>
-					<altlabel>[COLOR=Selected]$LOCALIZE[31343629][/COLOR]</altlabel>
+					<altlabel>[COLOR=Selected]$LOCALIZE[31234][/COLOR]</altlabel>
 					<alttexturefocus border="12" colordiffuse="$VAR[Highlight6]">common/white.png</alttexturefocus>
 					<alttexturenofocus border="12" colordiffuse="$VAR[Highlight6]">common/white.png</alttexturenofocus>
 				</control>
@@ -176,7 +176,7 @@
 					<alttexturenofocus border="12" colordiffuse="$VAR[Highlight6]">common/white.png</alttexturenofocus>
 					<usealttexture>ControlGroup(3).HasFocus(41)</usealttexture>
 				</control>    
-								<control type="togglebutton" id="43" description="הרחבות בשימוש הסקין">
+								<control type="togglebutton" id="43" description="תודות">
 					<label>$LOCALIZE[31530]</label>
 					<align>right</align>
 					<font>font-listinfo</font>
@@ -1259,47 +1259,7 @@
 				<onleft>back</onleft>
 				<onup>5</onup>
 				<ondown>5</ondown>
-
-				<control type="label" id="803">
-					<!-- string -->
-					<description>ערכות נושא - הגדרות, עיצוב ותפריטים בהגדרה אוטומטית</description>
-					<textcolor>$VAR[HighlightColor2]</textcolor>
-					<label>   $LOCALIZE[31343728]</label>
-					<align>right</align>
-					<font>font-listinfo</font>
-					<visible>ControlGroup(3).HasFocus(36)</visible>
-				</control>
-
-				<control type="button" id="804">
-					<onclick>RunScript(script.skin.helper.service,action=colorthemes)</onclick>
-					<label>$LOCALIZE[31343729]</label>
-					<description>Manage Color Themes</description>
-					<align>right</align>
-					<font>Font-ListInfo</font>
-					<visible>ControlGroup(3).HasFocus(36)</visible>
-				</control>  
-
-				<control type="button" id="805">
-					<label>$LOCALIZE[31343730]</label>
-					<align>right</align>
-					<font>Font-ListInfo</font>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[31343730],message=$LOCALIZE[31531],yesaction=RunScript(special://skin/extras/scripts/themeselector.py))</onclick>
-					<visible>ControlGroup(3).HasFocus(36)</visible>
-					<texturefocus border="12" colordiffuse="$VAR[Highlight6]">common/white.png</texturefocus>
-				</control>
-				
-
-								<control type="button" id="806">
-					<label>$LOCALIZE[31532]</label>
-					<align>right</align>
-					<font>Font-ListInfo</font>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[31532],message=$LOCALIZE[43788],yesaction=RunScript(special://skin/extras/scripts/Personal.py))</onclick>
-					<visible>ControlGroup(3).HasFocus(36)</visible>
-					<texturefocus border="12" colordiffuse="$VAR[Highlight6]">common/white.png</texturefocus>
-				</control>
-				
-				
-				
+			
 <!--
 				<control type="button" id="806">
 					<label>$LOCALIZE[31343730]</label>
@@ -1433,7 +1393,7 @@
 					<label>$LOCALIZE[31343735]</label>
 					<align>right</align>
 					<font>Font-ListInfo</font>
-                    <onclick>RunScript(script.skinshortcuts,type=setProperty&amp;property=background|background|background|background|background|background|background|background|background|background|background|background|background|background&amp;value=$INFO[Skin.String(home.fanart.path)]tvshows$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]movies$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]video$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]music$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]livetv$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]kids$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]vod$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]search$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]weather$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]favorites$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]addons$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]settings$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]power$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]software$INFO[Skin.String(home.fanart.ext)]&amp;labelID=tvshows|20342|3|2|31343584|31313|31314|script.globalsearch|8|1036|1037|settings|33060|programs)</onclick>
+                    <onclick>RunScript(script.skinshortcuts,type=setProperty&amp;property=background|background|background|background|background|background|background|background|background|background|background|background|background|background&amp;value=$INFO[Skin.String(home.fanart.path)]tvshows$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]movies$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]video$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]music$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]livetv$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]kids$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]vod$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]search$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]weather$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]favorites$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]addons$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]settings$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]power$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]software$INFO[Skin.String(home.fanart.ext)]&amp;labelID=tvshows|20342|3|2|31343584|31313|31314|script.globalsearch|8|1036|1037|weather|settings|33060|programs)</onclick>
 			<!--    <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[31343735],message=$LOCALIZE[43789],yesaction=RunScript(script.skinshortcuts,type=setProperty&amp;property=background|background|background|background|background|background|background|background|background|background|background|background|background|background&amp;value=$INFO[Skin.String(home.fanart.path)]tvshows$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]movies$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]video$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]music$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]livetv$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]kids$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]vod$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]search$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]weather$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]favorites$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]addons$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]settings$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]power$INFO[Skin.String(home.fanart.ext)]|$INFO[Skin.String(home.fanart.path)]software$INFO[Skin.String(home.fanart.ext)]&amp;labelID=tvshows|20342|3|2|31343584|31313|31314|script.globalsearch|8|1036|1037|settings|33060|programs))</onclick>-->
 					<visible>ControlGroup(3).HasFocus(36)</visible>
 				</control>
@@ -1454,7 +1414,7 @@
 					<label>$LOCALIZE[31343734]</label>
 					<align>right</align>
 					<font>Font-ListInfo</font>
-					<onclick>RunScript(script.skinshortcuts,type=setProperty&amp;property=thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb&amp;value=$INFO[Skin.String(home.icons.path)]tvshows$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]movies$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]video$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]music$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]livetv$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]kids$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]vod$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]search$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]weather$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]favorites$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]addons$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]settings$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]power$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]software$INFO[Skin.String(home.icons.ext)]&amp;labelID=tvshows|20342|3|2|31343584|31313|31314|script.globalsearch|8|1036|1037|settings|33060|programs)</onclick>
+					<onclick>RunScript(script.skinshortcuts,type=setProperty&amp;property=thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb&amp;value=$INFO[Skin.String(home.icons.path)]tvshows$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]movies$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]video$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]music$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]livetv$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]kids$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]vod$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]search$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]weather$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]favorites$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]addons$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]settings$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]power$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]software$INFO[Skin.String(home.icons.ext)]&amp;labelID=tvshows|20342|3|2|31343584|31313|31314|script.globalsearch|8|1036|1037|weather|settings|33060|programs|)</onclick>
 			<!--	<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[31343733],message=$LOCALIZE[43789],yesaction=RunScript(script.skinshortcuts,type=setProperty&amp;property=thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb|thumb&amp;value=$INFO[Skin.String(home.icons.path)]tvshows$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]movies$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]video$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]music$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]livetv$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]kids$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]vod$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]search$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]weather$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]favorites$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]addons$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]settings$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]power$INFO[Skin.String(home.icons.ext)]|$INFO[Skin.String(home.icons.path)]software$INFO[Skin.String(home.icons.ext)]&amp;labelID=tvshows|20342|3|2|31343584|31313|31314|script.globalsearch|8|1036|1037|settings|33060|programs))</onclick>-->
 					<visible>ControlGroup(3).HasFocus(36)</visible>
 				</control>
@@ -1747,6 +1707,43 @@
 				<onleft>back</onleft>
 				<onup>5</onup>
 				<ondown>5</ondown>
+				<control type="label" id="803">
+					<!-- string -->
+					<description>ערכות נושא - הגדרות, עיצוב ותפריטים בהגדרה אוטומטית</description>
+					<textcolor>$VAR[HighlightColor2]</textcolor>
+					<label>   $LOCALIZE[31343728]</label>
+					<align>right</align>
+					<font>font-listinfo</font>
+					<visible>ControlGroup(3).HasFocus(39)</visible>
+				</control>
+
+				<control type="button" id="804">
+					<onclick>RunScript(script.skin.helper.service,action=colorthemes)</onclick>
+					<label>$LOCALIZE[31343729]</label>
+					<description>Manage Color Themes</description>
+					<align>right</align>
+					<font>Font-ListInfo</font>
+					<visible>ControlGroup(3).HasFocus(39)</visible>
+				</control>  
+
+				<control type="button" id="805">
+					<label>$LOCALIZE[31343730]</label>
+					<align>right</align>
+					<font>Font-ListInfo</font>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[31343730],message=$LOCALIZE[31531],yesaction=RunScript(special://skin/extras/scripts/themeselector.py))</onclick>
+					<visible>ControlGroup(3).HasFocus(39)</visible>
+					<texturefocus border="12" colordiffuse="$VAR[Highlight6]">common/white.png</texturefocus>
+				</control>
+				
+
+								<control type="button" id="806">
+					<label>$LOCALIZE[31532]</label>
+					<align>right</align>
+					<font>Font-ListInfo</font>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[31532],message=$LOCALIZE[43788],yesaction=RunScript(special://skin/extras/scripts/Personal.py))</onclick>
+					<visible>ControlGroup(3).HasFocus(39)</visible>
+					<texturefocus border="12" colordiffuse="$VAR[Highlight6]">common/white.png</texturefocus>
+				</control>
 
 				<control type="label" id="814">
 					<!-- string -->
@@ -1803,6 +1800,7 @@
 
 
 				<!-- Backup -->
+				
 				<control type="button" id="816">
 					<label>$LOCALIZE[31343740]</label>
 					<align>right</align>
@@ -1863,6 +1861,26 @@
                     <texturefocus border="12" colordiffuse="$VAR[Highlight6]">common/white.png</texturefocus>   
                     <onclick>ReloadSkin()</onclick>                         
 			   </control>-->
+			   											<control type="label" id="831">
+					<!-- string -->
+					<description>ערכות נושא - הגדרות, עיצוב ותפריטים בהגדרה אוטומטית</description>
+					<textcolor>$VAR[HighlightColor2]</textcolor>
+					<label>   $LOCALIZE[43793]</label>
+					<align>right</align>
+					<font>font-listinfo</font>
+					<visible>ControlGroup(3).HasFocus(39)</visible>
+				</control>
+				
+				
+								<control type="button" id="832">
+					<label>$LOCALIZE[43794]</label>
+					<align>right</align>
+					<font>Font-ListInfo</font>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[43793],message=$LOCALIZE[43795],yesaction=RunScript(special://skin/extras/scripts/sendlog.py))</onclick>
+					<visible>ControlGroup(3).HasFocus(39)</visible>
+					<texturefocus border="12" colordiffuse="$VAR[Highlight6]">common/white.png</texturefocus>
+				</control>
+			   
 			</control>	
 
 			<control type="grouplist" id="5">
@@ -2239,7 +2257,7 @@
 					<onclick condition="System.HasAddon(plugin.program.autocompletion)">Addon.OpenSettings(plugin.program.autocompletion)</onclick>
 					<onclick condition="!System.HasAddon(plugin.program.autocompletion)">RunPlugin(plugin://plugin.program.autocompletion)</onclick>
 				</control>
-				
+				<!--
 				<control type="button" id="6027">
 					<width>100%</width>
 
@@ -2251,7 +2269,7 @@
 					<onclick condition="System.HasAddon(service.EMupdater)">Addon.OpenSettings(service.EMupdater)</onclick>
 					<onclick condition="!System.HasAddon(service.EMupdater)">RunPlugin(plugin://service.EMupdater)</onclick>
 				</control>
-				
+				-->
 			</control>
 						<control type="multiimage">
 						<top>-150</top>
