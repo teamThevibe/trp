@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+<!-- music -->
+	<shortcut>
+		<action>ActivateWindow(Music,$INFO[Window(home).Property(librarynode)],return)</action>
+		<label>43785</label>
+		<label2>Common Shortcut</label2>
+		<defaultID>music</defaultID>		
+		<icon>special://skin/extras/icons/infinity.png</icon>
+	</shortcut>
+		<shortcut>
+		<action>ActivateWindow(MusicLibrary,Addons,return)</action>
+		<label2>Common Shortcut</label2>
+	    <defaultID>radio</defaultID>		
+		<label>43786</label>
+		<icon>special://skin/extras/icons/play2.png</icon>
+	</shortcut>
+	<shortcut>
+		<action>ActivateWindow(10025,"plugin://plugin.video.featherence.music",return)</action>
+		<label>$LOCALIZE[43759]</label>
+	    <label2>43786</label2>
+		<defaultID />
+		<icon>special://skin/extras/icons/play2.png</icon>
+	</shortcut>	
+	<shortcut>
+		<action>ActivateWindow(10025,"plugin://plugin.audio.99fm-playlists",return)</action>
+		<label>$LOCALIZE[43760]</label>
+	    <label2>הרחבת וידאו</label2>
+		<defaultID />
+		<icon>special://skin/extras/icons/play2.png</icon>
+	</shortcut>
+	<shortcut>
+		<action>ActivateWindow(10025,"plugin://plugin.audio.100fm",return)</action>
+		<label>$LOCALIZE[43761]</label>
+	    <label2>הרחבת וידאו</label2>
+		<defaultID />
+		<icon>special://skin/extras/icons/play2.png</icon>
+	</shortcut>
+	<shortcut>
+		<action>ActivateWindow(10025,"plugin://plugin.video.kmusictube",return)</action>
+		<label>$LOCALIZE[43762]</label>
+	    <label2>הרחבת וידאו</label2>
+		<defaultID />
+		<icon>special://skin/extras/icons/play2.png</icon>
+	</shortcut>
+	<shortcut>
+		<action>ActivateWindow(10025,"plugin://plugin.audio.housemixes",return)</action>
+		<label>$LOCALIZE[43763]</label>
+	    <label2>הרחבת וידאו</label2>
+		<defaultID />
+		<icon>special://skin/extras/icons/play2.png</icon>
+	</shortcut>
+	<shortcut>
+		<action>ActivateWindow(10025,"plugin://plugin.audio.tunir",return)</action>
+		<label>$LOCALIZE[43764]</label>
+	    <label2>הרחבת וידאו</label2>
+		<defaultID />
+		<icon>special://skin/extras/icons/play2.png</icon>
+	</shortcut>
+
+	<shortcut>
+		<action>RunScript(script.skin.helper.service,action=musicsearch)</action>
+		<label>19140</label>
+		<label2>32019</label2>
+		<defaultID>19140</defaultID>
+		<icon />
+		<thumb>special://skin/extras/icons/play2.png</thumb>
+	</shortcut>
+	<shortcut>
+		<action>ActivateWindow(MusicLibrary,Artists,return)</action>
+		<label>133</label>
+		<label2>32019</label2>
+		<defaultID>133</defaultID>
+		<icon>special://skin/extras/icons/play2.png</icon>
+		<thumb />
+	</shortcut>
+	<shortcut>
+		<action>ActivateWindow(MusicLibrary,Albums,return)</action>
+		<label>132</label>
+		<label2>32019</label2>
+		<defaultID>132</defaultID>
+		<icon>special://skin/extras/icons/play2.png</icon>
+		<thumb />
+	</shortcut>
+	<shortcut>
+		<action>ActivateWindow(MusicLibrary,Songs,return)</action>
+		<label>134</label>
+		<label2>32019</label2>
+		<defaultID>134</defaultID>
+		<icon>special://skin/extras/icons/play2.png</icon>
+		<thumb />
+	</shortcut>
+	<shortcut>
+		<action>ActivateWindow(MusicFiles)</action>
+		<label>744</label>
+		<label2>32019</label2>
+		<defaultID>744</defaultID>
+		<icon>special://skin/extras/icons/play2.png</icon>
+		<thumb />
+	</shortcut>
+	<shortcut>
+		<action>ActivateWindow(MusicLibrary,MusicLibrary,return)</action>
+		<label>15100</label>
+		<label2>32019</label2>
+		<defaultID>15100</defaultID>
+		<icon>special://skin/extras/icons/play2.png</icon>
+		<thumb />
+	</shortcut>
+	<shortcut>
+		<action>ActivateWindow(MusicLibrary,Addons,return)</action>
+		<label>1038</label>
+		<label2>32019</label2>
+		<defaultID>1038</defaultID>
+		<icon>special://skin/extras/icons/play2.png</icon>
+		<thumb />
+	</shortcut>
+</shortcuts>

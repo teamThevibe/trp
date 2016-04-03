@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window>
+
+    <defaultcontrol always="true">9315</defaultcontrol>
+    <onload>ClearProperty(homefocus,home)</onload>
+    <onload>SetProperty(SkinInitStarted,1,home)</onload>
+    <onunload>SetProperty(widget,movies,home)</onunload>
+	<onload>Skin.SetBool(SmartShortcuts.playlists)</onload>
+	<onload condition="IsEmpty(skin.string(topbar_home_opacity2))">Skin.SetString(topbar_home_opacity2, 40)</onload>
+	<onload condition="IsEmpty(skin.string(topbar_home_opacity))">Skin.SetString(topbar_home_opacity, 0)</onload>
+	<onload condition="System.HasAddon(script.skin.helper.service) + IsEmpty(Skin.String(SkinHelper.AutoCloseMusicOSD))">Skin.SetString(SkinHelper.AutoCloseMusicOSD,5)</onload>
+	<onload condition="System.HasAddon(script.skin.helper.service) + IsEmpty(Skin.String(SkinHelper.AutoCloseVideoOSD))">Skin.SetString(SkinHelper.AutoCloseVideoOSD,5)</onload>
+	<onload condition="System.HasAddon(script.skin.helper.service) + IsEmpty(Skin.String(SkinHelper.RandomFanartDelay))">Skin.SetString(SkinHelper.RandomFanartDelay,10)</onload>
+	<!-- Modification Onload -->    
+	<onload condition="!IsEmpty(Skin.String(home.widgetposters)">Skin.SetString(home.widgetposters,$LOCALIZE[31154])</onload>
+	<onload condition="IsEmpty(Skin.String(HomeStyle))">Skin.SetString(HomeStyle, beveled)</onload>
+	<onload condition="IsEmpty(Skin.String(categories))">Skin.SetString(categories, Em2)</onload>
+	<onload condition="!Skin.HasSetting(SkinHelper.EnablePVRThumbs)">Skin.SetBool(SkinHelper.EnablePVRThumbs)</onload>
+	<onload condition="!System.HasAddon(script.skin.helper.service)">ReplaceWindow($INFO[System.StartupWindow])</onload>
+	<onload condition="System.HasAddon(script.skin.helper.service) + Skin.HasSetting(Disable_Splash)">ReplaceWindow($INFO[System.StartupWindow])</onload>	
+	<onload condition="System.HasAddon(script.skin.helper.service) + !Skin.HasSetting(Disable_Splash)">RunScript(script.skin.helper.service,action=splashscreen,file=$VAR[splash_path],duration=6)</onload>
+	<onload>Skin.SetBool(SkinHelper.EnableAnimatedPosters)</onload>
+    <controls>
+        <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture colordiffuse="Background">common/white.png</texture>
+        </control>
+        <control type="button" id="9314">
+            
+            <visible allowhiddenfocus="true">false</visible>
+                        
+  
+            <!-- Init Complete -->
+            <onfocus>Skin.SetBool(skin.init)</onfocus>
+            <onfocus>Skin.SetBool(disable.bgvideo)</onfocus>
+            <onfocus>Skin.SetBool(HideDebugInfo)</onfocus>
+            <onfocus>Skin.SetBool(showdetailedosdinfo)</onfocus>
+            <onfocus>Skin.SetBool(disable.pvricon)</onfocus>
+            
+        </control>
+        <control type="button" id="9316">
+            
+            <visible allowhiddenfocus="true">false</visible>
+          
+            <!-- Init Complete -->
+            <onfocus>Skin.SetBool(skin.init2)</onfocus>
+            <onfocus>SetFocus(9315)</onfocus>
+            
+        </control>
+        <control type="button" id="9315">
+            <visible allowhiddenfocus="true">false</visible>
+            <onfocus condition="!Skin.HasSetting(skin.init)">SetFocus(9314)</onfocus>
+            <onfocus condition="!Skin.HasSetting(skin.init2)">SetFocus(9316)</onfocus>
+            <onfocus condition="Skin.HasSetting(skin.init) + Skin.HasSetting(skin.init2)">RunScript(script.skin.info.service)</onfocus>
+            <onfocus condition="Skin.HasSetting(skin.init) + Skin.HasSetting(skin.init2) + Skin.HasSetting(NextAired.Update) + Library.HasContent(tvshows)">RunScript(script.tv.show.next.aired,silent=True)</onfocus>
+            <!--<onfocus condition="Skin.HasSetting(skin.init) + Skin.HasSetting(skin.init2)">AlarmClock(GoHome,ReplaceWindow(home),00:01,silent,false)</onfocus>-->
+        </control>
+		<control type="videowindow">
+			<width>100%</width>
+			<height>100%</height>
+		</control>
+		<!-- image control for splash -->
+		<control type="image">
+			<width>100%</width>
+			<height>100%</height>
+			<aspectratio>keep</aspectratio>
+			<texture background="true">$INFO[Window(Home).Property(SkinHelper.SplashScreen)]</texture>
+		</control>
+    </controls>
+</window>

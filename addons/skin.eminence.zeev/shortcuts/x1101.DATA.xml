@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+    <shortcut>
+        <label>$LOCALIZE[31343594]</label>
+		<label2>Movie Hub Shortcut</label2>
+		<defaultID>20342</defaultID>
+        <action>ActivateWindow(Videos,MovieTitles,return)</action>
+        <icon>special://skin/extras/icons/infinity.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>31533</label>
+		<label2>הרחבת וידאו</label2>
+		<defaultID>31533</defaultID>
+        <action>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=movies&amp;url=popular",return)</action>
+		<icon>special://skin/extras/icons/ICONS/exodus_icon.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>31534</label>
+		<label2>הרחבת וידאו</label2>
+		<defaultID>31534</defaultID>
+        <action>ActivateWindow(10025,"plugin://plugin.video.salts/?section=Movies&amp;mode=popular",return)</action>
+		<icon>special://skin/extras/icons/ICONS/SALTS3.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>31535</label>
+		<label2>Movie Hub Shortcut</label2>
+		<defaultID>31535</defaultID>
+        <action>ActivateWindow(10025,"plugin://plugin.video.quasar/movies/popular",return)</action>
+		<icon>special://skin/extras/icons/ICONS/QUSAR.png</icon>
+    </shortcut>
+	    <shortcut>
+        <label>43790</label>
+		<label2>Movie Hub Shortcut</label2>
+		<defaultID>43790</defaultID>
+        <action>ActivateWindow(VideoLibrary,"plugin://plugin.video.meta/movies/most_popular/1",return)</action>
+		<icon>special://skin/extras/icons/ICONS/META.png</icon>
+    </shortcut>
+		    <shortcut>
+        <label>43791</label>
+		<label2>Movie Hub Shortcut</label2>
+		<defaultID>43791</defaultID>
+        <action>RunPlugin("plugin://plugin.video.meta/movies/search")</action>
+		<icon>special://skin/extras/icons/ICONS/METAs.png</icon>
+    </shortcut>
+	<shortcut>
+        <label>$LOCALIZE[31343600]</label>
+		<label2>Movie Hub Shortcut</label2>
+		<defaultID>20342</defaultID>
+        <action>RunScript(script.globalsearch,tvshows=true&amp;episodes=true&amp;movies=true)</action>
+		<icon>special://skin/extras/icons/search.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>31100</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>ActivateWindow(Videos,RecentlyAddedMovies,return)</action>
+        <icon>special://skin/extras/icons/recentlyadded.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>31101</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>ActivateWindow(Videos,special://skin/extras/playlists/RecentMovies.xsp,return)</action>
+        <icon>special://skin/extras/icons/recent.png</icon>
+    </shortcut>
+    
+    <shortcut>
+        <label>31102</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>PlayMedia(special://skin/extras/playlists/RandomMovies.xsp)</action>
+        <icon>special://skin/extras/icons/signpost.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>137</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>RunScript(script.globalsearch,tvshows=true&amp;episodes=true&amp;movies=true)</action>
+        <icon>special://skin/extras/icons/search.png</icon>
+    </shortcut>
+    
+    <shortcut>
+        <label>135</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>ActivateWindow(Videos,MovieGenres,return)</action>
+        <icon>special://skin/extras/icons/genre.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>20348</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>ActivateWindow(Videos,MovieDirectors,return)</action>
+        <icon>special://skin/extras/icons/director.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>344</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>ActivateWindow(Videos,MovieActors,return)</action>
+        <icon>special://skin/extras/icons/actor.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>20434</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>ActivateWindow(Videos,MovieSets,return)</action>
+        <icon>special://skin/extras/icons/year.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>136</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>ActivateWindow(videos,special://videoplaylists/,return)</action>
+        <icon>special://skin/extras/icons/playlist.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>1214</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>ActivateWindow(Videos,Files,return)</action>
+        <icon>special://skin/extras/icons/files.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>24001</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>ActivateWindow(videos,addons://sources/video/,return)</action>
+        <icon>special://skin/extras/icons/video-addons.png</icon>
+    </shortcut>
+    <shortcut>
+        <label>653</label>
+        <label2>Movie Hub Shortcut</label2>
+        <action>UpdateLibrary(video)</action>
+        <icon>special://skin/extras/icons/update.png</icon>
+    </shortcut>
+</shortcuts>
